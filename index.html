@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login System Page">
+    <!--bootstap style-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--custom style-->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Login System Page</title>
+</head>
+<body>
+    <main class="bg-black    vh-100 d-flex align-items-center ">
+            <div class="container bg-white   text-black text-center  ">
+                <h1 class=" mb-5 text-primary">Smart Login Page</h1>
+                <form action="">
+                    <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="emailInpt"
+                          placeholder="Enter Email"
+                          autocomplete="off"
+                           />
+                       
+                        <label for="floatingInput">Email</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="password"
+                          class="form-control "
+                          id="passwordInpt"
+                          placeholder="Enter Password"
+                          autocomplete="off"
+                           />
+                       
+                        <label for="floatingInput">Password</label>
+                      </div>
+                      <a href="" class="btn btn-outline-primary w-100" id="logIn">Login</a>
+                      <p class="mt-3">Don’t have an account ?<a href="register.html" class="text-black text-decoration-none ms-1">Sign up</a></p>
+                      <div class="inpts d-flex justify-content-center align-items-center">
+                        <input type="radio" name="loginPerson" class="m-2"  id="professor">
+                        <label for="professor" >Professor</label>
+                        <input type="radio" name="loginPerson" class="m-2" id="student">
+                        <label for="student">Student</label>
+                      </div>
+                     
+                </form>
+            </div>
+    </main>
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

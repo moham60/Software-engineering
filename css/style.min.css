@@ -1,0 +1,53 @@
+.container{
+    box-shadow: 0 0 8px #463939;
+    padding: 3rem 2rem;
+}
+.dark-Mode{
+    background-color: black;
+    color: #ff0039;
+   
+}
+.darkMode{
+    cursor: pointer;
+}
+.text-decoration-none:hover{
+    text-decoration: underline !important;
+}
+nav{
+    padding: 15px 25px;
+    box-shadow:0 0 8px #463939;
+    position: fixed;
+    left: 10rem;
+    right: 0;
+}
+input[type=search]{
+    border: 1px solid #eee;
+    padding: 5px;
+    transition: 0.4s ease;
+}
+input[type=search]:focus{
+    outline: none;
+    padding-right: 15px;
+}
+aside{
+    position: relative;
+    z-index: 2;
+    width: 10rem;
+  
+}
+
+.text-decoration-none:hover{
+    text-decoration: none !important;
+}
+.fa-search{
+    right: 5px;
+}
+li{
+    padding: 5px;
+}
+.btn-outline-dark,.btn-outline-primary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
