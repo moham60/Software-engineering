@@ -1,13 +1,4 @@
 
-let users=JSON.parse(localStorage.getItem("user"));
-    if(users){
-        users.forEach(e => {
-            if(e.logIn==="true"){
-                document.querySelector(".homeContainer").innerHTML=`
-                <h1>Welcome ${e.name}</h1>`
-            }
-        });
-    }
     
 
 let darkMode=document.querySelector(".darkMode");
