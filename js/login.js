@@ -11,7 +11,7 @@ function validation(email,pass){
     if(users&&users.length>0){
         for (let i = 0; i < users.length; i++) { 
             if(users[i].email==email&&users[i].pass==pass){
-                window.location.href="home.html";
+                window.location.href="Profossorhome.html";
                 users[i].logIn="true";
                 addToLocal(users);
                 break;
