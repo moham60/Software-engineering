@@ -1,7 +1,4 @@
-.container:not(.friends .container){
-    box-shadow: 0 0 8px #463939;
-    padding: 3rem 2rem;
-}
+
 
 .dark-Mode{
     background-color: black;
