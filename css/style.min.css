@@ -1,7 +1,8 @@
-.container{
+.container:not(.friends .container){
     box-shadow: 0 0 8px #463939;
     padding: 3rem 2rem;
 }
+
 .dark-Mode{
     background-color: black;
     color: #ff0039;
@@ -16,9 +17,10 @@
 nav{
     padding: 15px 25px;
     box-shadow:0 0 8px #463939;
-    position: fixed;
-    left: 10rem;
+    position:absolute;
+    left: 9rem;
     right: 0;
+    top: 0;
 }
 input[type=search]{
     border: 1px solid #eee;
@@ -50,4 +52,22 @@ li{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/******friends******/
+.friends .container .row .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(48, 43, 43);
+    text-decoration: none;
+}
+
+.friends .container .row .icons a i{
+    font-size: 15px;
+    color: #eee;
 }
