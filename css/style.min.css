@@ -1,5 +1,7 @@
 
-
+section{
+    padding: 120px 0;
+}
 .dark-Mode{
     background-color: black;
     color: #ff0039;
@@ -13,11 +15,17 @@
 }
 nav{
     padding: 15px 25px;
-    box-shadow:0 0 8px #463939;
+    box-shadow:0 0 8px #eee;
     position:absolute;
     left: 9rem;
     right: 0;
     top: 0;
+}
+#logOut{
+    cursor: pointer;
+}
+#logOut:hover{
+    color: #ff0039;
 }
 input[type=search]{
     border: 1px solid #eee;
@@ -60,7 +68,6 @@ li{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: rgb(48, 43, 43);
     text-decoration: none;
 }
 
