@@ -2,6 +2,22 @@
 section{
     padding: 120px 0;
 }
+h2{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 35px;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    background:linear-gradient(to right,rgb(3, 54, 223),rgb(228, 228, 228)) ;
+   
+}
 .dark-Mode{
     background-color: black;
     color: #ff0039;
