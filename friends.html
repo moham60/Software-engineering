@@ -1,258 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="home page after success login">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="home page after success login" />
     <!--bootsrap style-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!--custom style -->
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css" />
     <!--font awsome link-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <title>Home</title>
-</head>
-<body>
-    <nav class=" bg-white d-flex justify-content-between  align-items-center ">
-        <div class="inpt position-relative">
-            <input type="search" class="rounded " placeholder="enter keyWord">
-            <i class="fa-solid fa-search position-absolute translate-middle top-50"></i>
-        </div>
-       
-        <div class="right d-flex align-items-center">
-            <i class="fa-solid fa-moon me-2 darkMode "></i>
-            <i class="fa-regular fa-bell fa-lg me-2"></i>
-        </div>
+  </head>
+  <body>
+    <nav class="d-flex justify-content-between align-items-center">
+      <div class="inpt position-relative">
+        <input type="search" class="rounded" placeholder="enter keyWord" />
+        <i
+          class="fa-solid fa-search position-absolute translate-middle top-50"></i>
+      </div>
+
+      <div class="right d-flex align-items-center">
+        <i class="fa-solid fa-moon me-2 darkMode"></i>
+        <i class="fa-regular fa-bell fa-lg me-2"></i>
+      </div>
     </nav>
-    <main class="d-flex gap-3 ">
-        <aside class="bg-white shadow-lg min-vh-100 text-black text-center ">
-            <span class="name d-inline-block mt-4">Mohamed</span>
-            <ul class="mt-5 list-unstyled">
-                <li class="my-2 ">
-                    <a href="Profossorhome.html" class="text-decoration-none btn btn-outline-dark "><i class="fa-regular fa-chart-bar fa-fw"></i><span>Dashboard</span></a>
-                </li>
-                <li class="my-2 ">
-                    <a href="setting.html" class="text-decoration-none btn btn-outline-dark   "><i class="fa-solid fa-gear fa-fw"></i>
-                        <span>
-                            Setting
-                        </span> </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="profile.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-user fa-fw"></i>
-                        <span>
-                            Profile
-                        </span>
-                    </a>
-                </li>
-               
-                <li class="my-2 ">
-                    <a href="friends.html" class="text-decoration-none btn btn-outline-dark  active"><i class="fa-regular fa-circle-user fa-fw"></i>
-                        <span>
-                            Friends
-                        </span>
-                    </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="materials.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-file fa-fw"></i>
-                        <span>
-                            Materials
-                        </span>
-                    </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="assignments.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-file"></i><span>
-                        Assignments
-                    </span></a>
-                </li>
-                <li class="my-2 ">
-                    <a href="courses.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-solid fa-graduation-cap fa-fw"></i><span>
-                        Courses
-                    </span></a>
-                </li>
-                <li class="my-2 d-flex justify-content-center">
-                    <a href="chat.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-brands fa-rocketchat"></i><span>
-                        Chat
-                    </span></a>
-                </li>
-            </ul>
-        </aside>
-        <section class="friends py-5 m-5 ">
-            <h2 class="fs-1">Friends</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
-                        <div class="cart shadow-lg  position-relative bg-white  py-4 px-3">
-                 <div class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2  ms-2  ">
-                                <a href="#" class="me-2 btn btn-primary rounded-circle"><i class="fa-solid fa-phone"></i></a>
-                                <a href="#" class="btn btn-primary rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-                            </div>
-                            <div class="image mt-4">
-                                <img class="w-25 rounded mx-auto d-block" src="./images/brunet-man-with-round-eyeglasses.jpg" alt="">
-                            </div>
-                        <div class="title border-bottom ">
-                            <h4 class="text-center">Mohamed</h4>
-                        </div>
-                        <div class="info my-2 py-2  border-bottom">
-                            <div class="icon">
-                                <i class="fa-regular fa-face-smile fa-fw"></i>
-                                <span> 99 Friend</span>
-                            </div>
-                            
-                            <div class="icon">
-                                <i class="fa-regular fa-newspaper fa-fw"></i>
-                                <span> 25 Articles</span>
-                            </div>
-                        </div>
-                           <div class="personal-info d-flex align-items-center justify-content-between   py-2 ">
-                            <span>Joined 02/10/2021</span>
-                            <div class="butns d-flex">
-                                <a class="btn btn-primary me-2" style="font-size: 12px;">Profile</a>
-                                <a class="btn btn-danger" style="font-size: 12px;">remove</a>
-                            </div>
-                           </div>
-                        </div>
-                  
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
-                        <div class="cart shadow-lg p-2 position-relative bg-white py-4 px-3">
-                 <div class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2   ms-2">
-                                <a href="#" class="me-2 btn btn-primary rounded-circle"><i class="fa-solid fa-phone"></i></a>
-                                <a href="#" class="btn btn-primary rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-                            </div>
-                            <div class="image mt-4">
-                                <img class="w-25 rounded mx-auto d-block" src="./images/young-bearded-man-with-striped-shirt.jpg" alt="">
-                            </div>
-                        <div class="title border-bottom ">
-                            <h4 class="text-center">Mohamed</h4>
-                        </div>
-                        <div class="info my-2 py-2  border-bottom">
-                            <div class="icon">
-                                <i class="fa-regular fa-face-smile fa-fw"></i>
-                                <span> 99 Friend</span>
-                            </div>
-                            
-                            <div class="icon">
-                                <i class="fa-regular fa-newspaper fa-fw"></i>
-                                <span> 25 Articles</span>
-                            </div>
-                        </div>
-                           <div class="personal-info d-flex align-items-center justify-content-between   py-2 ">
-                            <span>Joined 02/10/2021</span>
-                            <div class="butns d-flex">
-                                <a class="btn btn-primary me-2" style="font-size: 12px;">Profile</a>
-                                <a class="btn btn-danger" style="font-size: 12px;">remove</a>
-                            </div>
-                           </div>
-                        </div>
-                  
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
-                        <div class="cart shadow-lg p-2 position-relative bg-white py-4 px-3 ">
-                 <div class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2 ">
-                                <a href="#" class="me-2 btn btn-primary rounded-circle"><i class="fa-solid fa-phone"></i></a>
-                                <a href="#" class="btn btn-primary rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-                            </div>
-                            <div class="image mt-4">
-                                <img class="w-25 rounded mx-auto d-block" src="./images/confident-handsome-man-extending-his-hand-handshake-smiling-determined.jpg" alt="">
-                            </div>
-                        <div class="title border-bottom ">
-                            <h4 class="text-center">Mohamed</h4>
-                        </div>
-                        <div class="info my-2 py-2  border-bottom">
-                            <div class="icon">
-                                <i class="fa-regular fa-face-smile fa-fw"></i>
-                                <span> 99 Friend</span>
-                            </div>
-                            
-                            <div class="icon">
-                                <i class="fa-regular fa-newspaper fa-fw"></i>
-                                <span> 25 Articles</span>
-                            </div>
-                        </div>
-                           <div class="personal-info d-flex align-items-center justify-content-between   py-2 ">
-                            <span>Joined 02/10/2021</span>
-                            <div class="butns d-flex">
-                                <a class="btn btn-primary me-2" style="font-size: 12px;">Profile</a>
-                                <a class="btn btn-danger" style="font-size: 12px;">remove</a>
-                            </div>
-                           </div>
-                        </div>
-                  
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
-                        <div class="cart shadow-lg p-2 position-relative bg-white py-4 px-3 ">
-                 <div class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2 ">
-                                <a href="#" class="me-2 btn btn-primary rounded-circle"><i class="fa-solid fa-phone"></i></a>
-                                <a href="#" class="btn btn-primary rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-                            </div>
-                            <div class="image mt-4">
-                                <img class="w-25 rounded mx-auto d-block" src="./images/confident-handsome-man-extending-his-hand-handshake-smiling-determined.jpg" alt="">
-                            </div>
-                        <div class="title border-bottom ">
-                            <h4 class="text-center">Mohamed</h4>
-                        </div>
-                        <div class="info my-2 py-2  border-bottom">
-                            <div class="icon">
-                                <i class="fa-regular fa-face-smile fa-fw"></i>
-                                <span> 99 Friend</span>
-                            </div>
-                            
-                            <div class="icon">
-                                <i class="fa-regular fa-newspaper fa-fw"></i>
-                                <span> 25 Articles</span>
-                            </div>
-                        </div>
-                           <div class="personal-info d-flex align-items-center justify-content-between   py-2 ">
-                            <span>Joined 02/10/2021</span>
-                            <div class="butns d-flex">
-                                <a class="btn btn-primary me-2" style="font-size: 12px;">Profile</a>
-                                <a class="btn btn-danger" style="font-size: 12px;">remove</a>
-                            </div>
-                           </div>
-                        </div>
-            
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
-                        <div class="cart shadow-lg p-2 position-relative bg-white py-4 px-3">
-                 <div class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2   ms-2">
-                                <a href="#" class="me-2 btn btn-primary rounded-circle"><i class="fa-solid fa-phone"></i></a>
-                                <a href="#" class="btn btn-primary rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-                            </div>
-                            <div class="image mt-4">
-                                <img class="w-25 rounded mx-auto d-block" src="./images/young-bearded-man-with-striped-shirt.jpg" alt="">
-                            </div>
-                        <div class="title border-bottom ">
-                            <h4 class="text-center">Mohamed</h4>
-                        </div>
-                        <div class="info my-2 py-2  border-bottom">
-                            <div class="icon">
-                                <i class="fa-regular fa-face-smile fa-fw"></i>
-                                <span> 99 Friend</span>
-                            </div>
-                            
-                            <div class="icon">
-                                <i class="fa-regular fa-newspaper fa-fw"></i>
-                                <span> 25 Articles</span>
-                            </div>
-                        </div>
-                           <div class="personal-info d-flex align-items-center justify-content-between   py-2 ">
-                            <span>Joined 02/10/2021</span>
-                            <div class="butns d-flex">
-                                <a class="btn btn-primary me-2" style="font-size: 12px;">Profile</a>
-                                <a class="btn btn-danger" style="font-size: 12px;">remove</a>
-                            </div>
-                           </div>
-                        </div>
-                  
-                    </div>
+    <main class="d-flex">
+      <aside class="bg-white shadow-lg min-vh-100 text-center">
+        <span class="name d-inline-block mt-4">Mohamed</span>
+        <ul class="mt-5 list-unstyled">
+          <li class="my-2">
+            <a
+              href="Profossorhome.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-chart-bar fa-fw"></i
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              href="setting.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-solid fa-gear fa-fw"></i> <span> Setting </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="profile.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-user fa-fw"></i>
+              <span> Profile </span>
+            </a>
+          </li>
+
+          <li class="my-2">
+            <a
+              href="friends.html"
+              class="text-decoration-none btn btn-outline-dark active"
+              ><i class="fa-regular fa-circle-user fa-fw"></i>
+              <span> Friends </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="materials.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-file fa-fw"></i>
+              <span> Materials </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="assignments.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-file"></i><span> Assignments </span></a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              href="courses.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-solid fa-graduation-cap fa-fw"></i
+              ><span> Courses </span></a
+            >
+          </li>
+          <li class="my-2 d-flex justify-content-center">
+            <a
+              href="chat.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-brands fa-rocketchat"></i><span> Chat </span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <div class="container">
+          <h2 class="fs-1">Friends</h2>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="cart shadow-lg position-relative py-4 px-3">
+                <div
+                  class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2">
+                  <a href="#" class="me-2 btn btn-primary rounded-circle"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary rounded-circle"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
                 </div>
+                <div class="image mt-4">
+                  <img
+                    class="w-25 rounded mx-auto d-block"
+                    src="./images/brunet-man-with-round-eyeglasses.jpg"
+                    alt="" />
+                </div>
+                <div class="title border-bottom">
+                  <h4 class="text-center">Mohamed</h4>
+                </div>
+                <div class="info my-2 py-2 border-bottom">
+                  <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span> 25 Articles</span>
+                  </div>
+                </div>
+                <div
+                  class="personal-info d-flex flex-wrap align-items-center justify-content-between py-2">
+                  <span>Joined 02/10/2021</span>
+                  <div class="butns">
+                    <a class="btn btn-primary me-2" style="font-size: 12px"
+                      >Profile</a
+                    >
+                    <a class="btn btn-danger" style="font-size: 12px">remove</a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-4 col-md-6">
+              <div class="cart shadow-lg p-2 position-relative py-4 px-3">
+                <div
+                  class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2">
+                  <a href="#" class="me-2 btn btn-primary rounded-circle"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary rounded-circle"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="image mt-4">
+                  <img
+                    class="w-25 rounded mx-auto d-block"
+                    src="./images/young-bearded-man-with-striped-shirt.jpg"
+                    alt="" />
+                </div>
+                <div class="title border-bottom">
+                  <h4 class="text-center">Mohamed</h4>
+                </div>
+                <div class="info my-2 py-2 border-bottom">
+                  <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span> 25 Articles</span>
+                  </div>
+                </div>
+                <div
+                  class="personal-info d-flex flex-wrap align-items-center justify-content-between py-2">
+                  <span>Joined 02/10/2021</span>
+                  <div class="butns d-flex">
+                    <a class="btn btn-primary me-2" style="font-size: 12px"
+                      >Profile</a
+                    >
+                    <a class="btn btn-danger" style="font-size: 12px">remove</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="cart shadow-lg p-2 position-relative py-4 px-3">
+                <div
+                  class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2">
+                  <a href="#" class="me-2 btn btn-primary rounded-circle"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary rounded-circle"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="image mt-4">
+                  <img
+                    class="w-25 rounded mx-auto d-block"
+                    src="./images/confident-handsome-man-extending-his-hand-handshake-smiling-determined.jpg"
+                    alt="" />
+                </div>
+                <div class="title border-bottom">
+                  <h4 class="text-center">Mohamed</h4>
+                </div>
+                <div class="info my-2 py-2 border-bottom">
+                  <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span> 25 Articles</span>
+                  </div>
+                </div>
+                <div
+                  class="personal-info d-flex flex-wrap align-items-center justify-content-between py-2">
+                  <span>Joined 02/10/2021</span>
+                  <div class="butns d-flex">
+                    <a class="btn btn-primary me-2" style="font-size: 12px"
+                      >Profile</a
+                    >
+                    <a class="btn btn-danger" style="font-size: 12px">remove</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="cart shadow-lg p-2 position-relative py-4 px-3">
+                <div
+                  class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2">
+                  <a href="#" class="me-2 btn btn-primary rounded-circle"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary rounded-circle"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="image mt-4">
+                  <img
+                    class="w-25 rounded mx-auto d-block"
+                    src="./images/confident-handsome-man-extending-his-hand-handshake-smiling-determined.jpg"
+                    alt="" />
+                </div>
+                <div class="title border-bottom">
+                  <h4 class="text-center">Mohamed</h4>
+                </div>
+                <div class="info my-2 py-2 border-bottom">
+                  <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span> 25 Articles</span>
+                  </div>
+                </div>
+                <div
+                  class="personal-info d-flex flex-wrap align-items-center justify-content-between py-2">
+                  <span>Joined 02/10/2021</span>
+                  <div class="butns">
+                    <a class="btn btn-primary me-2" style="font-size: 12px"
+                      >Profile</a
+                    >
+                    <a class="btn btn-danger" style="font-size: 12px">remove</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="cart shadow-lg p-2 position-relative py-4 px-3">
+                <div
+                  class="comunnicate-icon d-flex align-items-center position-absolute start-0 top-0 mt-2 ms-2">
+                  <a href="#" class="me-2 btn btn-primary rounded-circle"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary rounded-circle"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="image mt-4">
+                  <img
+                    class="w-25 rounded mx-auto d-block"
+                    src="./images/young-bearded-man-with-striped-shirt.jpg"
+                    alt="" />
+                </div>
+                <div class="title border-bottom">
+                  <h4 class="text-center">Mohamed</h4>
+                </div>
+                <div class="info my-2 py-2 border-bottom">
+                  <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span> 25 Articles</span>
+                  </div>
+                </div>
+                <div
+                  class="personal-info d-flex flex-wrap align-items-center justify-content-between py-2">
+                  <span>Joined 02/10/2021</span>
+                  <div class="butns">
+                    <a class="btn btn-primary me-2" style="font-size: 12px"
+                      >Profile</a
+                    >
+                    <a class="btn btn-danger" style="font-size: 12px">remove</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/home.js"></script>
-   
-   
-</body>
+  </body>
 </html>
