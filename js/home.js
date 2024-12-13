@@ -10,5 +10,5 @@ darkMode.addEventListener("click", function () {
  document.querySelectorAll("ul li a").forEach(e=>{
      e.classlist.toggole("btn-outline-dark");
       e.classlist.toggole("btn-outline-primary");
-   
-});
+    });
+}
