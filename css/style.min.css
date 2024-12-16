@@ -132,4 +132,13 @@ li{
 .assignment:hover img{
    transform: rotate(18deg);
 }
+.add-assignment .info > div{
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+}
+.fa-download{
+    cursor: pointer;
+}
 /****/
