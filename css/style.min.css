@@ -16,7 +16,7 @@ h2::after{
     left: 50%;
     transform: translateX(-50%);
     height: 4px;
-    background-color:blue;
+    background:linear-gradient(to right,rgb(3, 54, 223),rgb(228, 228, 228)) ;
    
 }
 /***/
@@ -125,3 +125,11 @@ li{
 /*******/
 
 
+/***assignment***/
+.assignment img{
+    transition: 0.5s;
+}
+.assignment:hover img{
+   transform: rotate(18deg);
+}
+/****/
