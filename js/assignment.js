@@ -3,10 +3,10 @@ let addAssignment=document.getElementById("addAssignment");
 let assignmentRow=document.querySelector(".assignmentsRow")
 var countPng=0,countpdf=0,countppt=0;
 var date=new Date();
-  var currentDay=`${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()}`
+ 
 addAssignment.addEventListener("click",function(){
     if(uploadAssignment.value!==""){
-     
+     var deadline=prompt("please enter deadline");
         var extension=uploadAssignment.files[0].name.slice(uploadAssignment.files[0].name.lastIndexOf(".")+1)
         if(extension==="pdf"||extension==="png"||extension==="ppt"||extension==="pptx"){
           assignmentRow.innerHTML+=`
@@ -16,7 +16,7 @@ addAssignment.addEventListener("click",function(){
     <img width="55p" src="./images/${extension==="pptx"?"eps":extension}.svg" alt="">           
       <span class="d-block mt-2 num-assignment">${uploadAssignment.files[0].name} </span>
       <div class="info mt-2 border-top pt-3 d-flex align-items-center justify-content-between   ">
-           <span class="text-secondary">deadline 2024/12/20</span>
+           <span class="text-secondary">deadline ${deadline}</span>
       <span class="text-secondary">${(uploadAssignment.files[0].size / 1000000).toPrecision(2)}mb</span>
       </div>
           </div>
