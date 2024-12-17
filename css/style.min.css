@@ -142,3 +142,12 @@ li{
     cursor: pointer;
 }
 /****/
+/**courses*/
+.card{
+    --bs-card-border-width:0px
+}
+.coursers .card-img-top img{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+/********/
