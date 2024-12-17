@@ -39,7 +39,7 @@ addAssignment.addEventListener("click",function(){
           countppt++;
           document.querySelector(".pdf-powerPoint").classList.remove("d-none");
           document.querySelector(".pdf-powerPoint").innerHTML=`<div class="d-flex w-100 align-items-center justify-content-between">
-          <span><i class="fa-regular fa-file-powerpoint me-2 text-warning"></i>png files</span>
+          <span><i class="fa-regular fa-file-powerpoint me-2 text-warning"></i>ppt/x files</span>
           <span>${countppt} files</span>
       </div>`
         }
@@ -48,7 +48,7 @@ addAssignment.addEventListener("click",function(){
           countpdf++;
           document.querySelector(".pdf-files").classList.remove("d-none");
           document.querySelector(".pdf-files").innerHTML=`<div class="d-flex w-100 align-items-center justify-content-between">
-          <span><i class="fa-regular fa-file-pdf fa-lg center-flex c-blue icon me-2 p-2 text-dangerme-2"></i>png files</span>
+          <span><i class="fa-regular fa-file-pdf fa-lg center-flex c-blue icon me-2 p-2 text-dangerme-2"></i>pdf files</span>
 
           <span>${countpdf} files</span>
          </div>`
