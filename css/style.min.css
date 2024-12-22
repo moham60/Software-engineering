@@ -151,3 +151,8 @@ li{
     border-top-right-radius:5px;
 }
 /********/
+
+/**setting****/
+#changeEmail,#changePassword{
+    cursor: pointer;
+}
