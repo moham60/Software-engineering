@@ -12,6 +12,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     <title>Home</title>
   </head>
   <body>
@@ -29,8 +30,8 @@
       </div>
     </nav>
     <main class="d-flex">
-      <aside class="shadow-lg vh-100  text-center">
-        <span class="name d-inline-block mt-4">Mohamed</span>
+      <aside class="shadow-lg min-vh-100 text-center">
+        <span class="name d-inline-block mt-4"></span>
         <ul class="mt-5 list-unstyled">
           <li class="my-2">
             <a
@@ -96,7 +97,66 @@
           </li>
         </ul>
       </aside>
+
+      <section class="w-100">
+        <div class="chat-container">
+          <div class="chat-header">Group Chat</div>
+          <div class="main-container">
+            <div class="friends-list d-flex justify-content-around">
+              <div class="friend m-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/friend-01.jpg"
+                  alt=""
+                  width="50px" />
+              </div>
+              <div class="friend m-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/friend-02.jpg"
+                  alt=""
+                  width="50px" />
+              </div>
+              <div class="friend m-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/friend-03.jpg"
+                  alt=""
+                  width="50px" />
+              </div>
+              <div class="friend m-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/friend-04.jpg"
+                  alt=""
+                  width="50px" />
+              </div>
+              <div class="friend m-2">
+                <img
+                  class="rounded-circle"
+                  src="./images/friend-05.jpg"
+                  alt=""
+                  width="50px" />
+              </div>
+            </div>
+            <div class="chat-content">
+              <div class="chat-messages">
+                <div class="message sent"></div>
+              </div>
+              <div class="chat-input">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  placeholder="Type your message here..."
+                  id="message" />
+                <button id="sendMessage">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/home.js"></script>
+    <script src="./js/chat.js"></script>
   </body>
 </html>
