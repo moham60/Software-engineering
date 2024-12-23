@@ -37,3 +37,13 @@ links.forEach((e) => {
     e.classList.add("active");
   }
 });
+
+let forms=document.querySelectorAll('form');
+
+forms.forEach(e){
+  e.addEventListener("submit", function (event) {
+     event.preventDefault();
+    });
+});
+
+
