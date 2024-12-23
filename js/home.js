@@ -18,3 +18,16 @@ let logOut = document.getElementById("logOut");
 logOut.addEventListener("click", function () {
   window.location.href = "index.html";
 });
+
+
+
+let links = document.querySelectorAll("li a");
+
+links.forEach((e) => {
+  e.classList.add("active");
+  if (window.location.href != e.href) {
+    e.classList.remove("active");
+  } else {
+    e.classList.add("active");
+  }
+});
