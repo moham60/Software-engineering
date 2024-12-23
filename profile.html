@@ -26,6 +26,10 @@
         <i class="fa-solid fa-moon me-2 darkMode"></i>
         <i class="fa-regular fa-bell fa-lg me-2"></i>
         <i class="fa-solid fa-right-from-bracket" id="logOut"></i>
+        <div class="profileImage ms-3">
+ <img width="30px" class="d-block ms-2" src="./images/avatar.png" alt="" id="profileImg">
+        </div>
+       
       </div>
     </nav>
     <main class="d-flex">
@@ -50,7 +54,7 @@
           <li class="my-2">
             <a
               href="profile.html"
-              class="text-decoration-none btn btn-outline-dark "
+              class="text-decoration-none btn btn-outline-dark"
               ><i class="fa-regular fa-user fa-fw"></i>
               <span> Profile </span>
             </a>
@@ -99,9 +103,77 @@
       <section class="w-100">
         <div class="container">
           <h2 class="fs-1">Profile</h2>
-          <div class="row">
-            <div class="col-12">
-              <div class="cart shadow-lg p-3 text-center">
+          <h4 class="text-primary">Choose Profile Image</h4>
+          <div class="chooseImage  my-4">
+            <form action="" class="d-flex align-items-center">
+    <div class="inpt ms-2">
+       <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img1" />
+              <label for="img1"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/avatar.png"
+                  alt=""
+              /></label>
+             
+            </div>
+            <div class="inpt ms-2">
+               <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img2" />
+              <label for="img2"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  
+                  src="./images/friend-04.jpg"
+                  alt=""
+              /></label>
+             
+            </div>
+            <div class="inpt ms-2">
+              <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img3" />
+              <label for="img3"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/friend-02.jpg"
+                  alt=""
+              /></label>
+              
+            </div>
+            <div class="inpt ms-2">
+               <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img4" />
+              <label for="img4"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/friend-01.jpg"
+                  alt=""
+              /></label>
+             
+            </div>
+            <button class="btn btn-success ms-3" id="saveChangeImage">Save Image</button>
+            </form>
+            
+          </div>
+          <div class="row gy-3">
+            <div class="col-12 ">
+              <div class="cart p-3  shadow-lg text-center">
                 <p class="fs-3 text-primary">General Information</p>
                 <div class="info">
                   <p class="fs-4">
@@ -115,7 +187,8 @@
                   </p>
                 </div>
               </div>
-              <div class="cart shadow-lg p-3 text-center">
+            </div>
+            <div class="col-12 "> <div class="cart  p-3 shadow-lg text-center">
                 <p class="fs-3 text-primary">Personal Information</p>
                 <div class="info">
                   <p class="fs-4">
@@ -128,8 +201,8 @@
                     Date Of Birth: <span class="text-danger">25/10/1982</span>
                   </p>
                 </div>
-              </div>
-              <div class="cart shadow-lg p-3 text-center">
+              </div></div>
+             <div class="col-12 "> <div class="cart p-3  shadow-lg text-center">
                 <p class="fs-3 text-primary">Job Information</p>
                 <div class="info">
                   <p class="fs-4">
@@ -145,12 +218,14 @@
                     <span class="text-danger">10+</span>
                   </p>
                 </div>
-              </div>
+              </div></div>
+             
             </div>
           </div>
         </div>
       </section>
     </main>
     <script src="./js/home.js"></script>
+    <script src="./js/profile.js"></script>
   </body>
 </html>
