@@ -238,3 +238,13 @@ li{
     }
 
 
+/*profile*/
+.chooseImage img{
+ cursor: pointer;
+}
+.chooseImage img:active{
+    border: 2px solid red;
+}
+
+
+
