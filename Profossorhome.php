@@ -1,3 +1,4 @@
+
 <?php
 // Include your database connection file
 include("menu.php");
@@ -47,6 +48,6 @@ $userName = getUserName($userId);
             </div>
         </nav>
     </main>
-    <script src="./js/home.js"></script>
+    <script type="module" src="./js/home.js"></script>
 </body>
 </html>

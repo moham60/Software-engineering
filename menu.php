@@ -39,7 +39,7 @@ function renderMenu($userName) {
                 <a href="materials.php" class="text-decoration-none btn btn-outline-dark"><i class="fa-regular fa-file fa-fw"></i><span>Materials</span></a>
             </li>
             <li class="my-2">
-                <a href="assignments.php" class="text-decoration-none btn btn-outline-dark active"><i class="fa-regular fa-file"></i><span>Assignments</span></a>
+                <a href="assignments.php" class="text-decoration-none btn btn-outline-dark"><i class="fa-regular fa-file"></i><span>Assignments</span></a>
             </li>
             <li class="my-2">
                 <a href="courses.php" class="text-decoration-none btn btn-outline-dark"><i class="fa-solid fa-graduation-cap fa-fw"></i><span>Courses</span></a>

@@ -124,7 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mysqli_stmt_bind_param($stmt, "sssss", $firstname, $lastname, $email, $hashed_password, $role); // "sssss" for 5 strings
         if (mysqli_stmt_execute($stmt)) {
             // Redirect to index.html
-            header("Location: Profossorhome.php");
             exit;
         } else {
             echo "Error: " . mysqli_error($conn);
