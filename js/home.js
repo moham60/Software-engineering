@@ -19,6 +19,12 @@ logOut.addEventListener("click", function () {
   window.location.href = "index.html";
 });
 
+let saveDeleteEmail=document.getElementById('saveDeleteEmail');
+
+saveDeleteEmail.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
+
 
 
 let links = document.querySelectorAll("li a");
