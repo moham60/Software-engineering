@@ -29,7 +29,7 @@
       </div>
     </nav>
     <main class="d-flex">
-      <aside class="shadow-lg vh-100 text-center">
+      <aside class="shadow-lg min-vh-100 text-center">
         <span class="name d-inline-block mt-4"></span>
         <ul class="mt-5 list-unstyled">
           <li class="my-2">
@@ -43,7 +43,7 @@
           <li class="my-2">
             <a
               href="setting.html"
-              class="text-decoration-none btn btn-outline-dark "
+              class="text-decoration-none btn btn-outline-dark"
               ><i class="fa-solid fa-gear fa-fw"></i> <span> Setting </span>
             </a>
           </li>
@@ -99,7 +99,7 @@
       <section class="w-100">
         <div class="container">
           <h2 class="fs-1 p-2">Setting</h2>
-          <div class="row">
+          <div class="row g-4">
             <div class="col-12">
               <div class="cart bg-white shadow-lg p-4 w-100">
                 <h4 class="text-center my-2">Privacy Information</h4>
@@ -129,6 +129,44 @@
                       class="badge bg-primary position-absolute end-0 top-50 py-2 px-4 d-block translate-middle"
                       id="changePassword"
                       >Change</span
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-danger my-2" id="deleteBtnEmail">
+                Delete Email
+              </button>
+              <div class="cart deleteEmail bg-white shadow-lg p-4 w-100 d-none">
+                <h4 class="text-center my-2">Delete Email</h4>
+                <form action="" class="position-relative">
+                  <div class="passwordInpt position-relative">
+                    <input
+                      type="password"
+                      placeholder=""
+                      autocomplete="off"
+                      class="form-control mt-4 mb-2"
+                      id="passwordInpt" />
+
+                    <span
+                      class="badge bg-primary position-absolute end-0 top-50 py-2 px-4 d-block translate-middle"
+                      id="pass"
+                      >Enter your password</span
+                    >
+                  </div>
+                  <div class="passwordInpt position-relative">
+                    <input
+                      type="password"
+                      placeholder=""
+                      autocomplete="off"
+                      class="form-control mt-4 mb-2"
+                      id="repateInptPass" />
+
+                    <span
+                      class="badge bg-primary position-absolute end-0 top-50 py-2 px-4 d-block translate-middle"
+                      id="rpeatePass"
+                      >repeat password</span
                     >
                   </div>
                 </form>
