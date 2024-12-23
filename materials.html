@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="home page after success login">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="home page after success login" />
     <!--bootsrap style-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!--custom style -->
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css" />
     <!--font awsome link-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <title>Home</title>
-</head>
-<body>
+    <title>Material</title>
+  </head>
+  <body>
+    <nav class="d-flex justify-content-between align-items-center">
+      <div class="inpt position-relative">
+        <input type="search" class="rounded" placeholder="enter keyWord" />
+        <i
+          class="fa-solid fa-search position-absolute translate-middle top-50"></i>
+      </div>
 
-     <nav class="  d-flex justify-content-between align-items-center ">
-            <div class="inpt position-relative">
-                <input type="search" class="rounded " placeholder="enter keyWord">
-                <i class="fa-solid fa-search position-absolute translate-middle top-50"></i>
-            </div>
-           
-            <div class="right d-flex align-items-center">
-                <i class="fa-solid fa-moon me-2 darkMode "></i>
-                <i class="fa-regular fa-bell fa-lg me-2"></i>
-                <i class="fa-solid fa-right-from-bracket" id="logOut"></i>
-            </div>
-        </nav>
+      <div class="right d-flex align-items-center">
+        <i class="fa-solid fa-moon me-2 darkMode"></i>
+        <i class="fa-regular fa-bell fa-lg me-2"></i>
+        <i class="fa-solid fa-right-from-bracket" id="logOut"></i>
+      </div>
+    </nav>
     <main class="d-flex">
-        
-        <aside class="shadow-lg vh-100  text-center ">
-            <span class="name d-inline-block mt-4">Mohamed</span>
-            <ul class="mt-5 list-unstyled">
-                <li class="my-2 ">
-                    <a href="Profossorhome.html" class="text-decoration-none btn btn-outline-dark "><i class="fa-regular fa-chart-bar fa-fw"></i><span>Dashboard</span></a>
-                </li>
-                <li class="my-2 ">
-                    <a href="setting.html" class="text-decoration-none btn btn-outline-dark   "><i class="fa-solid fa-gear fa-fw"></i>
-                        <span>
-                            Setting
-                        </span> </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="profile.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-user fa-fw"></i>
-                        <span>
-                            Profile
-                        </span>
-                    </a>
-                </li>
-               
-                <li class="my-2 ">
-                    <a href="friends.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-circle-user fa-fw"></i>
-                        <span>
-                            Friends
-                        </span>
-                    </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="materials.html" class="text-decoration-none btn btn-outline-dark"><i class="fa-regular fa-file fa-fw"></i>
-                        <span>
-                            Materials
-                        </span>
-                    </a>
-                </li>
-                <li class="my-2 ">
-                    <a href="assignments.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-regular fa-file"></i><span>
-                        Assignments
-                    </span></a>
-                </li>
-                <li class="my-2 ">
-                    <a href="courses.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-solid fa-graduation-cap fa-fw"></i><span>
-                        Courses
-                    </span></a>
-                </li>
-                <li class="my-2 d-flex justify-content-center">
-                    <a href="chat.html" class="text-decoration-none btn btn-outline-dark  "><i class="fa-brands fa-rocketchat"></i><span>
-                        Chat
-                    </span></a>
-                </li>
-            </ul>
-        </aside>
-       
-        
-      
+      <aside class="shadow-lg vh-100 text-center">
+        <span class="name d-inline-block mt-4"></span>
+        <ul class="mt-5 list-unstyled">
+          <li class="my-2">
+            <a
+              href="Profossorhome.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-chart-bar fa-fw"></i
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              href="setting.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-solid fa-gear fa-fw"></i> <span> Setting </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="profile.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-user fa-fw"></i>
+              <span> Profile </span>
+            </a>
+          </li>
+
+          <li class="my-2">
+            <a
+              href="friends.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-circle-user fa-fw"></i>
+              <span> Friends </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="materials.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-file fa-fw"></i>
+              <span> Materials </span>
+            </a>
+          </li>
+          <li class="my-2">
+            <a
+              href="assignments.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-regular fa-file"></i><span> Assignments </span></a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              href="courses.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-solid fa-graduation-cap fa-fw"></i
+              ><span> Courses </span></a
+            >
+          </li>
+          <li class="my-2 d-flex justify-content-center">
+            <a
+              href="chat.html"
+              class="text-decoration-none btn btn-outline-dark"
+              ><i class="fa-brands fa-rocketchat"></i><span> Chat </span></a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <section class="w-100">
+        <div class="container">
+          <h2 class="fs-1">Material</h2>
+          <div class="row gy-4">
+            <div class="col-lg-8 col-md-7">
+              <div class="row gy-4 materialRow"></div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+              <div class="add-material bg-white shadow-lg p-4">
+                <button class="my-2 btn btn-success" id="addMaterial">
+                  Add Material
+                </button>
+                <input type="file" class="form-control" id="uploadMaterial" />
+                <div class="info mt-2">
+                  <div
+                    class="pdf-files d-none d-flex align-items-center justify-content-between w-100"></div>
+                  <div
+                    class="pdf-powerPoint d-none d-flex align-items-center justify-content-between"></div>
+                  <div
+                    class="images-files d-none d-flex align-items-center justify-content-between"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/home.js"></script>
-    
-   
-</body>
+    <script src="./js/matetial.js"></script>
+  </body>
 </html>
