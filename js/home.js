@@ -40,10 +40,12 @@ links.forEach((e) => {
 
 let forms=document.querySelectorAll('form');
 
-forms.forEach(e){
-  e.addEventListener("submit", function (event) {
-     event.preventDefault();
-    });
+forms.forEach(e=>{
+  e.addEventListener("click", function (event) {
+   event.preventDefault();
 });
+});
+
+
 
 
