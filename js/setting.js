@@ -14,3 +14,11 @@ let deleteEmail = document.getElementById("deleteBtnEmail");
 deleteEmail.addEventListener("click", function () {
   document.querySelector(".deleteEmail").classList.remove("d-none");
 });
+
+
+
+let deleteEmailForm = document.querySelector(".deleteEmailForm");
+
+deleteEmailForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
