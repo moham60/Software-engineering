@@ -33,24 +33,137 @@ $userName = getUserName($userId);
     <title>Home</title>
 </head>
 <body>
-    <main class="d-flex">
         
     <?php renderMenu($userName); ?>
-
-        
-        <nav class="bg-white d-flex justify-content-between align-items-center">
-            <div class="inpt position-relative">
-                <input type="search" class="rounded" placeholder="Enter keyword">
-                <i class="fa-solid fa-search position-absolute translate-middle top-50"></i>
+    <section class="w-100">
+        <div class="container">
+          <h2 class="fs-1">Profile</h2>
+          <h4 class="text-primary">Choose Profile Image</h4>
+          <div class="chooseImage  my-4">
+            <form action="" class="d-flex align-items-center">
+    <div class="inpt ms-2">
+               <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img1" />
+              <label for="img1"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/avatar.png"
+                  alt=""
+              /></label>
+             
             </div>
-           
-            <div class="right d-flex align-items-center">
-                <i class="fa-solid fa-moon me-2 darkMode"></i>
-                <i class="fa-regular fa-bell fa-lg me-2"></i>
+            <div class="inpt ms-2">
+               <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img2" />
+              <label for="img2"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  
+                  src="./images/friend-04.jpg"
+                  alt=""
+              /></label>
+             
             </div>
-        </nav>
-      
-    </main>
+            <div class="inpt ms-2">
+              <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img3" />
+              <label for="img3"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/friend-02.jpg"
+                  alt=""
+              /></label>
+              
+            </div>
+            <div class="inpt ms-2">
+               <input
+                class="d-none"
+                type="radio"
+                name="chooseProfileImage"
+                id="img4" />
+              <label for="img4"
+                ><img
+                  class="rounded-circle"
+                  width="30px"
+                  src="./images/friend-01.jpg"
+                  alt=""
+              /></label>
+             
+            </div>
+            <button class="btn btn-success ms-3" id="saveChangeImage">Save Image</button>
+            </form>
+            
+          </div>
+          <div class="row gy-3">
+            <div class="col-12 ">
+              <div class="cart p-3  shadow-lg text-center">
+                <p class="fs-3 text-primary">General Information</p>
+                <div class="info">
+                  <p class="fs-4">
+                    Name: <span class="text-danger"><?php echo $userName ;?></span>
+                  </p>
+                  <p class="fs-4">
+                    Gender: <span class="text-danger">None</span>
+                  </p>
+                  <p class="fs-4">
+                    Country: <span class="text-danger">None</span>
+                  </p>
+                  <p class="fs-4">
+                    Role: <span class="text-danger"><?php echo $_SESSION['role']; ?></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 "> <div class="cart  p-3 shadow-lg text-center">
+                <p class="fs-3 text-primary">Personal Information</p>
+                <div class="info">
+                  <p class="fs-4">
+                    Email: <span class="text-danger"><?php echo $_SESSION['email']; ?></span>
+                  </p>
+                  <p class="fs-4">
+                    Phone: <span class="text-danger">None</span>
+                  </p>
+                  <p class="fs-4">
+                    Date Of Birth: <span class="text-danger">None</span>
+                  </p>
+                </div>
+              </div></div>
+             <div class="col-12 "> <div class="cart p-3  shadow-lg text-center">
+                <p class="fs-3 text-primary">Job Information</p>
+                <div class="info">
+                  <p class="fs-4">
+                    Title:
+                    <span class="text-danger">None</span>
+                  </p>
+                  <p class="fs-4">
+                    Programming Language:
+                    <span class="text-danger">None</span>
+                  </p>
+                  <p class="fs-4">
+                    Years of experience:
+                    <span class="text-danger">None</span>
+                  </p>
+                </div>
+              </div></div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
     <script src="./js/home.js"></script>
+    <script src="./js/profile.js"></script>
+
 </body>
 </html>

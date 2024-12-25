@@ -33,20 +33,35 @@ $userName = getUserName($userId);
     <title>Home</title>
 </head>
 <body>
-    <main class="d-flex">
     <?php renderMenu($userName); ?>
 
-        <nav class="bg-white d-flex justify-content-between align-items-center">
-            <div class="inpt position-relative">
-                <input type="search" class="rounded" placeholder="enter keyWord">
-                <i class="fa-solid fa-search position-absolute translate-middle top-50"></i>
+    <section class="w-100">
+        <div class="container">
+          <h2 class="fs-1">Material</h2>
+          <div class="row gy-4">
+            <div class="col-lg-8 col-md-7">
+              <div class="row gy-4 materialRow"></div>
             </div>
-            <div class="right d-flex align-items-center">
-                <i class="fa-solid fa-moon me-2 darkMode"></i>
-                <i class="fa-regular fa-bell fa-lg me-2"></i>
+            <div class="col-lg-4 col-md-5">
+              <div class="add-material bg-white shadow-lg p-4">
+                <button class="my-2 btn btn-success" id="addMaterial">
+                  Add Material
+                </button>
+                <input type="file" class="form-control" id="uploadMaterial" />
+                <div class="info mt-2">
+                  <div
+                    class="pdf-files d-none d-flex align-items-center justify-content-between w-100"></div>
+                  <div
+                    class="pdf-powerPoint d-none d-flex align-items-center justify-content-between"></div>
+                  <div
+                    class="images-files d-none d-flex align-items-center justify-content-between"></div>
+                </div>
+              </div>
             </div>
-        </nav>
-    </main>
+          </div>
+        </div>
+      </section>
+
     <script src="./js/home.js"></script>
     <script src="./js/setting.js"></script>
 </body>

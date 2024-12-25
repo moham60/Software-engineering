@@ -121,17 +121,7 @@ $potentialFriends = getPotentialFriends($userId, $conn);
     <title>Home</title>
 </head>
 <body>
-    <nav class="bg-white d-flex justify-content-between align-items-center">
-        <div class="inpt position-relative">
-            <input type="search" class="rounded " placeholder="enter keyWord">
-            <i class="fa-solid fa-search position-absolute translate-middle top-50"></i>
-        </div>
-        <div class="right d-flex align-items-center">
-            <i class="fa-solid fa-moon me-2 darkMode "></i>
-            <i class="fa-regular fa-bell fa-lg me-2"></i>
-        </div>
-    </nav>
-    <main class="d-flex gap-3">
+    
         <?php renderMenu($userName); ?>
 
         <section class="friends py-5 m-5">
@@ -196,7 +186,6 @@ $potentialFriends = getPotentialFriends($userId, $conn);
                 </div>
             </div>
         </section>
-    </main>
     <script src="./js/home.js"></script>
 </body>
 </html>

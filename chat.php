@@ -47,7 +47,6 @@ $friend = $friendResult->fetch_assoc();
     <title>Chat with <?php echo $friend['FirstName'] . ' ' . $friend['LastName']; ?></title>
 </head>
 <body>
-    <main class="d-flex">
         <?php renderMenu(getUserName($userId)); ?>
         
         <div class="container mt-4">
@@ -69,6 +68,7 @@ $friend = $friendResult->fetch_assoc();
                 <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
-    </main>
+        <script src="./js/home.js"></script>
+        <script src="./js/chat.js"></script>
 </body>
 </html>

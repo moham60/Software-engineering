@@ -20,20 +20,6 @@ include('database.php');
     <title>Home</title>
 </head>
 <body>
-<nav class="d-flex justify-content-between align-items-center">
-      <div class="inpt position-relative">
-        <input type="search" class="rounded" placeholder="enter keyWord" />
-        <i
-          class="fa-solid fa-search position-absolute translate-middle top-50"></i>
-      </div>
-
-      <div class="right d-flex align-items-center">
-        <i class="fa-solid fa-moon me-2 darkMode"></i>
-        <i class="fa-regular fa-bell fa-lg me-2"></i>
-        <i class="fa-solid fa-right-from-bracket" id="logOut"></i>
-      </div>
-</nav>
-<main class="d-flex">
     
 <?php renderMenu($userName); ?>
 
@@ -112,8 +98,6 @@ include('database.php');
         </div>
     </div>
 </section>
-</main>
 <script src="./js/home.js"></script>
-<script src="./js/setting.js"></script>
 </body>
 </html>

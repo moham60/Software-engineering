@@ -30,9 +30,6 @@ if ($result_courses === false) {
     exit;
 }
 
-if (mysqli_num_rows($result_courses) === 0) {
-    echo "No courses found for this student. Please check the enrollment data.";
-}
 
 ?>
 
@@ -48,12 +45,13 @@ if (mysqli_num_rows($result_courses) === 0) {
     <title>Assignments</title>
 </head>
 <body>
-    <main class="d-flex">
         <?php renderMenu($userName); ?>
 
         <section class="w-100">
             <div class="container assignments">
                 <h2 class="fs-1 py-2">Assignments</h2>
+                
+
 
                 <div class="row gy-4">
                     <?php
@@ -99,10 +97,45 @@ if (mysqli_num_rows($result_courses) === 0) {
                         echo "<p>No courses found.</p>";
                     }
                     ?>
+                                        <?php if ($userRole === 'Doctor'): ?>
+                        <!-- Upload Assignment Form -->
+                        <div class="col-lg-4 col-md-5">
+                            <form action="upload_assignment.php" method="POST" class="add-assignment bg-white shadow-lg p-4" enctype="multipart/form-data">
+                                <!-- Dropdown for selecting course -->
+                                <div class="form-group">
+                                    <label for="course_id">Select Course</label>
+                                    <select name="course_id" id="course_id" class="form-control" required>
+                                        <option value="">Select a Course</option>
+                                        <?php
+                                        mysqli_data_seek($result_courses, 0);
+                                        while ($course = mysqli_fetch_assoc($result_courses)) {
+                                            echo "<option value='" . $course['CourseId'] . "'>" . htmlspecialchars($course['CourseName']) . "</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+
+                                <!-- Other fields for assignment -->
+                                <input type="file" name="file" class="form-control" id="uploadAssignment" required>
+                                <input type="text" name="assignment_name" class="form-control mt-2" placeholder="Assignment Name" required>
+                                <textarea name="description" class="form-control mt-2" placeholder="Assignment Description" required></textarea>
+                                
+                                <!-- Deadline field -->
+                                <div class="form-group mt-2">
+                                    <label for="deadline">Deadline</label>
+                                    <input type="datetime-local" name="deadline" class="form-control" id="deadline" required>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-3">Upload Assignment</button>
+                            </form>
+                        </div>
+                    <?php endif; ?>
+                </div>
                 </div>
             </div>
         </section>
-    </main>
+    <script src="./js/home.js"></script>
+    <script src="./js/assignment.js"></script>
 </body>
 </html>
 
