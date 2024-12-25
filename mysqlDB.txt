@@ -47,16 +47,17 @@ CREATE TABLE Material (
 );
 
 CREATE TABLE Assignment (
-    AssignmentId INT AUTO_INCREMENT PRIMARY KEY,
-    CourseId INT NOT NULL,
-    Title VARCHAR(100) NOT NULL,
-    FileType VARCHAR(50) NOT NULL,
-    UploadBy INT NOT NULL,
+    AssignmentId INTEGER PRIMARY KEY AUTOINCREMENT,
+    CourseId INTEGER NOT NULL,
+    Title TEXT NOT NULL,
+    FileType TEXT NOT NULL,
+    UploadBy INTEGER NOT NULL,
     UploadDate DATETIME DEFAULT CURRENT_TIMESTAMP,
     Deadline DATETIME NOT NULL,
     FOREIGN KEY (CourseId) REFERENCES Courses(CourseId) ON DELETE CASCADE,
     FOREIGN KEY (UploadBy) REFERENCES Users(UserId)
 );
+
 
 CREATE TABLE Friends (
     FriendId INT NOT NULL,
@@ -84,3 +85,5 @@ CREATE TABLE CourseStudents (
     FOREIGN KEY (CourseId) REFERENCES Courses(CourseId) ON DELETE CASCADE,
     FOREIGN KEY (StudentId) REFERENCES Users(UserId) ON DELETE CASCADE
 );
+ALTER TABLE Assignment ADD COLUMN Filename VARCHAR(255) NOT NULL;
+
